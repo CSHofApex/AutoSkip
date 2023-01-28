@@ -23,7 +23,7 @@ android {
     signingConfigs {
         sign
     }
-    compileSdkVersion 30
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "top.xjunz.automator"
@@ -65,7 +65,7 @@ android {
 dependencies {
     implementation project(":automator")
     compileOnly project(":automator:hidden-apis")
-    def shizuku_version = '12.0.0'
+    def shizuku_version = '12.2.0'
     implementation "dev.rikka.shizuku:api:$shizuku_version"
     implementation "dev.rikka.shizuku:provider:$shizuku_version"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
