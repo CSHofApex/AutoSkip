@@ -23,7 +23,8 @@ android {
     signingConfigs {
         sign
     }
-    compileSdkVersion 31
+    compileSdkVersion 33
+    buildToolsVersion = "33.0.1"
 
     defaultConfig {
         applicationId "top.xjunz.automator"
@@ -54,11 +55,11 @@ android {
         dataBinding true
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.majorVersion
+        jvmTarget = JavaVersion.VERSION_17.majorVersion
     }
 }
 
