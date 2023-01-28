@@ -39,10 +39,10 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew assembleDebug
+      run: ./gradlew assembleRelease
 
     - name: Upload apk
       uses: actions/upload-artifact@v3
       with:
         name: AutoSkip_apk_${{ github.sha }}
-        path: app/build/outputs/apk/debug/*.apk
+        path: app/build/outputs/apk/release/*.apk
